@@ -1,159 +1,419 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.13.1 on win32)" generated="2025-06-02T12:36:23.210714" rpa="false" schemaversion="5">
-<suite id="s1" name="Teste Login" source="C:\Users\User\Desktop\ESTUDO\projeto-robot\tests\teste_login.robot">
+<robot generator="Robot 7.3 (Python 3.12.3 on linux)" generated="2025-06-02T20:24:45.008637" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste Login" source="/home/rystei/faculdade/ci_cd_luiz/cicd/tests/teste_login.robot">
 <test id="s1-t1" name="Login Com Sucesso" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:23.668835" level="INFO">Opening browser 'chrome' to base url 'file://C:\Users\User\Desktop\ESTUDO\projeto-robot\tests/../index.html'.</msg>
+<msg time="2025-06-02T20:24:45.234454" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/index.html'.</msg>
+<msg time="2025-06-02T20:24:46.552999" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-02T20:24:46.553248" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x571dcbaf429a &lt;unknown&gt;
+#1 0x571dcb560040 &lt;unknown&gt;
+#2 0x571dcb557147 &lt;unknown&gt;
+#3 0x571dcb548119 &lt;unknown&gt;
+#4 0x571dcb549e60 &lt;unknown&gt;
+#5 0x571dcb5484be &lt;unknown&gt;
+#6 0x571dcb547e2f &lt;unknown&gt;
+#7 0x571dcb547b05 &lt;unknown&gt;
+#8 0x571dcb545965 &lt;unknown&gt;
+#9 0x571dcb54614a &lt;unknown&gt;
+#10 0x571dcb563569 &lt;unknown&gt;
+#11 0x571dcb5fe685 &lt;unknown&gt;
+#12 0x571dcb5d7692 &lt;unknown&gt;
+#13 0x571dcb5fdace &lt;unknown&gt;
+#14 0x571dcb5d7463 &lt;unknown&gt;
+#15 0x571dcb5a3c55 &lt;unknown&gt;
+#16 0x571dcb5a48c1 &lt;unknown&gt;
+#17 0x571dcbab91bb &lt;unknown&gt;
+#18 0x571dcbabd0c9 &lt;unknown&gt;
+#19 0x571dcbaa1a39 &lt;unknown&gt;
+#20 0x571dcbabdc78 &lt;unknown&gt;
+#21 0x571dcba866bf &lt;unknown&gt;
+#22 0x571dcbae1948 &lt;unknown&gt;
+#23 0x571dcbae1b26 &lt;unknown&gt;
+#24 0x571dcbaf3176 &lt;unknown&gt;
+#25 0x76452589caa4 &lt;unknown&gt;
+#26 0x764525929c3c &lt;unknown&gt;
+</msg>
 <arg>${LOGIN_PAGE}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T12:36:23.668211" elapsed="2.657965"/>
+<status status="FAIL" start="2025-06-02T20:24:45.233853" elapsed="1.321825">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x571dcbaf429a &lt;unknown&gt;
+#1 0x571dcb560040 &lt;unknown&gt;
+#2 0x571dcb557147 &lt;unknown&gt;
+#3 0x571dcb548119 &lt;unknown&gt;
+#4 0x571dcb549e60 &lt;unknown&gt;
+#5 0x571dcb5484be &lt;unknown&gt;
+#6 0x571dcb547e2f &lt;unknown&gt;
+#7 0x571dcb547b05 &lt;unknown&gt;
+#8 0x571dcb545965 &lt;unknown&gt;
+#9 0x571dcb54614a &lt;unknown&gt;
+#10 0x571dcb563569 &lt;unknown&gt;
+#11 0x571dcb5fe685 &lt;unknown&gt;
+#12 0x571dcb5d7692 &lt;unknown&gt;
+#13 0x571dcb5fdace &lt;unknown&gt;
+#14 0x571dcb5d7463 &lt;unknown&gt;
+#15 0x571dcb5a3c55 &lt;unknown&gt;
+#16 0x571dcb5a48c1 &lt;unknown&gt;
+#17 0x571dcbab91bb &lt;unknown&gt;
+#18 0x571dcbabd0c9 &lt;unknown&gt;
+#19 0x571dcbaa1a39 &lt;unknown&gt;
+#20 0x571dcbabdc78 &lt;unknown&gt;
+#21 0x571dcba866bf &lt;unknown&gt;
+#22 0x571dcbae1948 &lt;unknown&gt;
+#23 0x571dcbae1b26 &lt;unknown&gt;
+#24 0x571dcbaf3176 &lt;unknown&gt;
+#25 0x76452589caa4 &lt;unknown&gt;
+#26 0x764525929c3c &lt;unknown&gt;
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:26.327167" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${VALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:26.326665" elapsed="0.146235"/>
+<status status="NOT RUN" start="2025-06-02T20:24:46.556161" elapsed="0.000065"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:26.473802" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:26.473390" elapsed="0.097146"/>
+<status status="NOT RUN" start="2025-06-02T20:24:46.556444" elapsed="0.000038"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:26.571194" level="INFO">Clicking button 'xpath=//button'.</msg>
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:26.570926" elapsed="0.216455"/>
+<status status="NOT RUN" start="2025-06-02T20:24:46.556635" elapsed="0.000035"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-02T12:36:27.788874" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-02T12:36:26.787944" elapsed="1.001182"/>
+<status status="NOT RUN" start="2025-06-02T20:24:46.556836" elapsed="0.000037"/>
 </kw>
 <kw name="Location Should Contain" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:27.799650" level="INFO">Current location contains 'dashboard.html'.</msg>
 <arg>dashboard.html</arg>
 <doc>Verifies that the current URL contains ``expected``.</doc>
-<status status="PASS" start="2025-06-02T12:36:27.789851" elapsed="0.010021"/>
+<status status="NOT RUN" start="2025-06-02T20:24:46.557064" elapsed="0.000043"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-02T12:36:27.800528" elapsed="2.268515"/>
+<status status="NOT RUN" start="2025-06-02T20:24:46.557253" elapsed="0.000034"/>
 </kw>
-<status status="PASS" start="2025-06-02T12:36:23.666981" elapsed="6.404081"/>
+<status status="FAIL" start="2025-06-02T20:24:45.232215" elapsed="1.325352">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x571dcbaf429a &lt;unknown&gt;
+#1 0x571dcb560040 &lt;unknown&gt;
+#2 0x571dcb557147 &lt;unknown&gt;
+#3 0x571dcb548119 &lt;unknown&gt;
+#4 0x571dcb549e60 &lt;unknown&gt;
+#5 0x571dcb5484be &lt;unknown&gt;
+#6 0x571dcb547e2f &lt;unknown&gt;
+#7 0x571dcb547b05 &lt;unknown&gt;
+#8 0x571dcb545965 &lt;unknown&gt;
+#9 0x571dcb54614a &lt;unknown&gt;
+#10 0x571dcb563569 &lt;unknown&gt;
+#11 0x571dcb5fe685 &lt;unknown&gt;
+#12 0x571dcb5d7692 &lt;unknown&gt;
+#13 0x571dcb5fdace &lt;unknown&gt;
+#14 0x571dcb5d7463 &lt;unknown&gt;
+#15 0x571dcb5a3c55 &lt;unknown&gt;
+#16 0x571dcb5a48c1 &lt;unknown&gt;
+#17 0x571dcbab91bb &lt;unknown&gt;
+#18 0x571dcbabd0c9 &lt;unknown&gt;
+#19 0x571dcbaa1a39 &lt;unknown&gt;
+#20 0x571dcbabdc78 &lt;unknown&gt;
+#21 0x571dcba866bf &lt;unknown&gt;
+#22 0x571dcbae1948 &lt;unknown&gt;
+#23 0x571dcbae1b26 &lt;unknown&gt;
+#24 0x571dcbaf3176 &lt;unknown&gt;
+#25 0x76452589caa4 &lt;unknown&gt;
+#26 0x764525929c3c &lt;unknown&gt;
+</status>
 </test>
 <test id="s1-t2" name="Login Com Usuário Inválido" line="23">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:30.075065" level="INFO">Opening browser 'chrome' to base url 'file://C:\Users\User\Desktop\ESTUDO\projeto-robot\tests/../index.html'.</msg>
+<msg time="2025-06-02T20:24:46.558737" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/index.html'.</msg>
+<msg time="2025-06-02T20:24:47.776220" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-02T20:24:47.776429" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x58f60842929a &lt;unknown&gt;
+#1 0x58f607e95040 &lt;unknown&gt;
+#2 0x58f607e8c147 &lt;unknown&gt;
+#3 0x58f607e7d119 &lt;unknown&gt;
+#4 0x58f607e7ee60 &lt;unknown&gt;
+#5 0x58f607e7d4be &lt;unknown&gt;
+#6 0x58f607e7ce2f &lt;unknown&gt;
+#7 0x58f607e7cb05 &lt;unknown&gt;
+#8 0x58f607e7a965 &lt;unknown&gt;
+#9 0x58f607e7b14a &lt;unknown&gt;
+#10 0x58f607e98569 &lt;unknown&gt;
+#11 0x58f607f33685 &lt;unknown&gt;
+#12 0x58f607f0c692 &lt;unknown&gt;
+#13 0x58f607f32ace &lt;unknown&gt;
+#14 0x58f607f0c463 &lt;unknown&gt;
+#15 0x58f607ed8c55 &lt;unknown&gt;
+#16 0x58f607ed98c1 &lt;unknown&gt;
+#17 0x58f6083ee1bb &lt;unknown&gt;
+#18 0x58f6083f20c9 &lt;unknown&gt;
+#19 0x58f6083d6a39 &lt;unknown&gt;
+#20 0x58f6083f2c78 &lt;unknown&gt;
+#21 0x58f6083bb6bf &lt;unknown&gt;
+#22 0x58f608416948 &lt;unknown&gt;
+#23 0x58f608416b26 &lt;unknown&gt;
+#24 0x58f608428176 &lt;unknown&gt;
+#25 0x7e1b27c9caa4 &lt;unknown&gt;
+#26 0x7e1b27d29c3c &lt;unknown&gt;
+</msg>
 <arg>${LOGIN_PAGE}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T12:36:30.074442" elapsed="1.445117"/>
+<status status="FAIL" start="2025-06-02T20:24:46.558391" elapsed="1.218876">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x58f60842929a &lt;unknown&gt;
+#1 0x58f607e95040 &lt;unknown&gt;
+#2 0x58f607e8c147 &lt;unknown&gt;
+#3 0x58f607e7d119 &lt;unknown&gt;
+#4 0x58f607e7ee60 &lt;unknown&gt;
+#5 0x58f607e7d4be &lt;unknown&gt;
+#6 0x58f607e7ce2f &lt;unknown&gt;
+#7 0x58f607e7cb05 &lt;unknown&gt;
+#8 0x58f607e7a965 &lt;unknown&gt;
+#9 0x58f607e7b14a &lt;unknown&gt;
+#10 0x58f607e98569 &lt;unknown&gt;
+#11 0x58f607f33685 &lt;unknown&gt;
+#12 0x58f607f0c692 &lt;unknown&gt;
+#13 0x58f607f32ace &lt;unknown&gt;
+#14 0x58f607f0c463 &lt;unknown&gt;
+#15 0x58f607ed8c55 &lt;unknown&gt;
+#16 0x58f607ed98c1 &lt;unknown&gt;
+#17 0x58f6083ee1bb &lt;unknown&gt;
+#18 0x58f6083f20c9 &lt;unknown&gt;
+#19 0x58f6083d6a39 &lt;unknown&gt;
+#20 0x58f6083f2c78 &lt;unknown&gt;
+#21 0x58f6083bb6bf &lt;unknown&gt;
+#22 0x58f608416948 &lt;unknown&gt;
+#23 0x58f608416b26 &lt;unknown&gt;
+#24 0x58f608428176 &lt;unknown&gt;
+#25 0x7e1b27c9caa4 &lt;unknown&gt;
+#26 0x7e1b27d29c3c &lt;unknown&gt;
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:31.522353" level="INFO">Typing text 'errado' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${INVALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:31.521720" elapsed="0.143728"/>
+<status status="NOT RUN" start="2025-06-02T20:24:47.777628" elapsed="0.000052"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:31.666377" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:31.666003" elapsed="0.104252"/>
+<status status="NOT RUN" start="2025-06-02T20:24:47.777855" elapsed="0.000036"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:31.772243" level="INFO">Clicking button 'xpath=//button'.</msg>
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:31.771765" elapsed="0.102333"/>
+<status status="NOT RUN" start="2025-06-02T20:24:47.778066" elapsed="0.000035"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-02T12:36:32.875138" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-02T12:36:31.874468" elapsed="1.000826"/>
+<status status="NOT RUN" start="2025-06-02T20:24:47.778260" elapsed="0.000036"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:32.876054" level="INFO">Verifying element 'id=error-message' contains exact text 'Usuário ou senha incorretos.'.</msg>
 <arg>id=error-message</arg>
 <arg>Usuário ou senha incorretos.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-06-02T12:36:32.875759" elapsed="0.035769"/>
+<status status="NOT RUN" start="2025-06-02T20:24:47.778449" elapsed="0.000034"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-02T12:36:32.918955" elapsed="2.236374"/>
+<status status="NOT RUN" start="2025-06-02T20:24:47.778634" elapsed="0.000033"/>
 </kw>
-<status status="PASS" start="2025-06-02T12:36:30.073034" elapsed="5.083017"/>
+<status status="FAIL" start="2025-06-02T20:24:46.557978" elapsed="1.220930">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x58f60842929a &lt;unknown&gt;
+#1 0x58f607e95040 &lt;unknown&gt;
+#2 0x58f607e8c147 &lt;unknown&gt;
+#3 0x58f607e7d119 &lt;unknown&gt;
+#4 0x58f607e7ee60 &lt;unknown&gt;
+#5 0x58f607e7d4be &lt;unknown&gt;
+#6 0x58f607e7ce2f &lt;unknown&gt;
+#7 0x58f607e7cb05 &lt;unknown&gt;
+#8 0x58f607e7a965 &lt;unknown&gt;
+#9 0x58f607e7b14a &lt;unknown&gt;
+#10 0x58f607e98569 &lt;unknown&gt;
+#11 0x58f607f33685 &lt;unknown&gt;
+#12 0x58f607f0c692 &lt;unknown&gt;
+#13 0x58f607f32ace &lt;unknown&gt;
+#14 0x58f607f0c463 &lt;unknown&gt;
+#15 0x58f607ed8c55 &lt;unknown&gt;
+#16 0x58f607ed98c1 &lt;unknown&gt;
+#17 0x58f6083ee1bb &lt;unknown&gt;
+#18 0x58f6083f20c9 &lt;unknown&gt;
+#19 0x58f6083d6a39 &lt;unknown&gt;
+#20 0x58f6083f2c78 &lt;unknown&gt;
+#21 0x58f6083bb6bf &lt;unknown&gt;
+#22 0x58f608416948 &lt;unknown&gt;
+#23 0x58f608416b26 &lt;unknown&gt;
+#24 0x58f608428176 &lt;unknown&gt;
+#25 0x7e1b27c9caa4 &lt;unknown&gt;
+#26 0x7e1b27d29c3c &lt;unknown&gt;
+</status>
 </test>
 <test id="s1-t3" name="Login Com Senha Inválida" line="32">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:35.159126" level="INFO">Opening browser 'chrome' to base url 'file://C:\Users\User\Desktop\ESTUDO\projeto-robot\tests/../index.html'.</msg>
+<msg time="2025-06-02T20:24:47.780055" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/index.html'.</msg>
+<msg time="2025-06-02T20:24:49.061822" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-02T20:24:49.062157" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x580924e4e29a &lt;unknown&gt;
+#1 0x5809248ba040 &lt;unknown&gt;
+#2 0x5809248b1147 &lt;unknown&gt;
+#3 0x5809248a2119 &lt;unknown&gt;
+#4 0x5809248a3e60 &lt;unknown&gt;
+#5 0x5809248a24be &lt;unknown&gt;
+#6 0x5809248a1e2f &lt;unknown&gt;
+#7 0x5809248a1b05 &lt;unknown&gt;
+#8 0x58092489f965 &lt;unknown&gt;
+#9 0x5809248a014a &lt;unknown&gt;
+#10 0x5809248bd569 &lt;unknown&gt;
+#11 0x580924958685 &lt;unknown&gt;
+#12 0x580924931692 &lt;unknown&gt;
+#13 0x580924957ace &lt;unknown&gt;
+#14 0x580924931463 &lt;unknown&gt;
+#15 0x5809248fdc55 &lt;unknown&gt;
+#16 0x5809248fe8c1 &lt;unknown&gt;
+#17 0x580924e131bb &lt;unknown&gt;
+#18 0x580924e170c9 &lt;unknown&gt;
+#19 0x580924dfba39 &lt;unknown&gt;
+#20 0x580924e17c78 &lt;unknown&gt;
+#21 0x580924de06bf &lt;unknown&gt;
+#22 0x580924e3b948 &lt;unknown&gt;
+#23 0x580924e3bb26 &lt;unknown&gt;
+#24 0x580924e4d176 &lt;unknown&gt;
+#25 0x7499c1a9caa4 &lt;unknown&gt;
+#26 0x7499c1b29c3c &lt;unknown&gt;
+</msg>
 <arg>${LOGIN_PAGE}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T12:36:35.158538" elapsed="1.457184"/>
+<status status="FAIL" start="2025-06-02T20:24:47.779740" elapsed="1.283201">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x580924e4e29a &lt;unknown&gt;
+#1 0x5809248ba040 &lt;unknown&gt;
+#2 0x5809248b1147 &lt;unknown&gt;
+#3 0x5809248a2119 &lt;unknown&gt;
+#4 0x5809248a3e60 &lt;unknown&gt;
+#5 0x5809248a24be &lt;unknown&gt;
+#6 0x5809248a1e2f &lt;unknown&gt;
+#7 0x5809248a1b05 &lt;unknown&gt;
+#8 0x58092489f965 &lt;unknown&gt;
+#9 0x5809248a014a &lt;unknown&gt;
+#10 0x5809248bd569 &lt;unknown&gt;
+#11 0x580924958685 &lt;unknown&gt;
+#12 0x580924931692 &lt;unknown&gt;
+#13 0x580924957ace &lt;unknown&gt;
+#14 0x580924931463 &lt;unknown&gt;
+#15 0x5809248fdc55 &lt;unknown&gt;
+#16 0x5809248fe8c1 &lt;unknown&gt;
+#17 0x580924e131bb &lt;unknown&gt;
+#18 0x580924e170c9 &lt;unknown&gt;
+#19 0x580924dfba39 &lt;unknown&gt;
+#20 0x580924e17c78 &lt;unknown&gt;
+#21 0x580924de06bf &lt;unknown&gt;
+#22 0x580924e3b948 &lt;unknown&gt;
+#23 0x580924e3bb26 &lt;unknown&gt;
+#24 0x580924e4d176 &lt;unknown&gt;
+#25 0x7499c1a9caa4 &lt;unknown&gt;
+#26 0x7499c1b29c3c &lt;unknown&gt;
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:36.617419" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${VALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:36.617033" elapsed="0.174916"/>
+<status status="NOT RUN" start="2025-06-02T20:24:49.063281" elapsed="0.000049"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:36.793875" level="FAIL">Variable '${INVALID_PASSWORD}' not found. Did you mean:
-    ${VALID_PASSWORD}</msg>
 <arg>id=password</arg>
 <arg>${INVALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-06-02T12:36:36.792420" elapsed="0.001709">Variable '${INVALID_PASSWORD}' not found. Did you mean:
-    ${VALID_PASSWORD}</status>
+<status status="NOT RUN" start="2025-06-02T20:24:49.063513" elapsed="0.000045"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-06-02T12:36:36.794935" elapsed="0.000114"/>
+<status status="NOT RUN" start="2025-06-02T20:24:49.063718" elapsed="0.000038"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-06-02T12:36:36.795537" elapsed="0.000065"/>
+<status status="NOT RUN" start="2025-06-02T20:24:49.063936" elapsed="0.000058"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
 <arg>id=error-message</arg>
 <arg>Usuário ou senha incorretos.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" start="2025-06-02T12:36:36.795903" elapsed="0.000046"/>
+<status status="NOT RUN" start="2025-06-02T20:24:49.064155" elapsed="0.000040"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-06-02T12:36:36.796266" elapsed="0.000049"/>
+<status status="NOT RUN" start="2025-06-02T20:24:49.064361" elapsed="0.000038"/>
 </kw>
-<status status="FAIL" start="2025-06-02T12:36:35.157532" elapsed="1.639194">Variable '${INVALID_PASSWORD}' not found. Did you mean:
-    ${VALID_PASSWORD}</status>
+<status status="FAIL" start="2025-06-02T20:24:47.779330" elapsed="1.285305">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.55)
+Stacktrace:
+#0 0x580924e4e29a &lt;unknown&gt;
+#1 0x5809248ba040 &lt;unknown&gt;
+#2 0x5809248b1147 &lt;unknown&gt;
+#3 0x5809248a2119 &lt;unknown&gt;
+#4 0x5809248a3e60 &lt;unknown&gt;
+#5 0x5809248a24be &lt;unknown&gt;
+#6 0x5809248a1e2f &lt;unknown&gt;
+#7 0x5809248a1b05 &lt;unknown&gt;
+#8 0x58092489f965 &lt;unknown&gt;
+#9 0x5809248a014a &lt;unknown&gt;
+#10 0x5809248bd569 &lt;unknown&gt;
+#11 0x580924958685 &lt;unknown&gt;
+#12 0x580924931692 &lt;unknown&gt;
+#13 0x580924957ace &lt;unknown&gt;
+#14 0x580924931463 &lt;unknown&gt;
+#15 0x5809248fdc55 &lt;unknown&gt;
+#16 0x5809248fe8c1 &lt;unknown&gt;
+#17 0x580924e131bb &lt;unknown&gt;
+#18 0x580924e170c9 &lt;unknown&gt;
+#19 0x580924dfba39 &lt;unknown&gt;
+#20 0x580924e17c78 &lt;unknown&gt;
+#21 0x580924de06bf &lt;unknown&gt;
+#22 0x580924e3b948 &lt;unknown&gt;
+#23 0x580924e3bb26 &lt;unknown&gt;
+#24 0x580924e4d176 &lt;unknown&gt;
+#25 0x7499c1a9caa4 &lt;unknown&gt;
+#26 0x7499c1b29c3c &lt;unknown&gt;
+</status>
 </test>
-<status status="FAIL" start="2025-06-02T12:36:23.212669" elapsed="13.585271"/>
+<status status="FAIL" start="2025-06-02T20:24:45.010099" elapsed="4.055227"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Teste Login" id="s1" pass="2" fail="1" skip="0">Teste Login</stat>
+<stat name="Teste Login" id="s1" pass="0" fail="3" skip="0">Teste Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-06-02T12:36:23.213017" level="ERROR">Error in file 'C:\Users\User\Desktop\ESTUDO\projeto-robot\tests\teste_login.robot' on line 10: Setting variable '${INVALID_PASSWORD} 000000' failed: Invalid variable name '${INVALID_PASSWORD} 000000'.</msg>
 </errors>
 </robot>
